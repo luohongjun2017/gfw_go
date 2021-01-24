@@ -101,9 +101,8 @@ blockquote {
 }
 
 pre {
-    padding: 2rem 1rem 1rem 1rem !important;
-    border-radius: 0.35rem;
-    tab-size: 4;
+    padding: 1.5rem 1.5rem 1.5rem 3.3rem !important; margin: 1rem 0 !important; background: #272822; overflow: auto; border-radius: 0.35rem; tab-size: 4;
+
 }
 
 .code-area::after {
@@ -154,7 +153,7 @@ code {
     right: 46px;
     line-height: 0;
     font-weight: bold;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-family: normal;
     z-index: 1;
     filter: invert(50%);
     cursor: pointer;
@@ -186,6 +185,10 @@ pre code {
     color: #e8eaf6;
     background-color: #272822;
 }
+
+pre[class*="language-"] { padding: 1.2em; margin: .5em 0; } code[class*="language-"], pre[class*="language-"] { color: #e8eaf6; white-space: pre-wrap !important; }
+
+.line-numbers-rows { border-right-width: 0px !important; } .line-numbers { padding: 1.5rem 1.5rem 1.5rem 3.2rem !important; margin: 1rem 0 !important; background: #272822; overflow: auto; border-radius: 0.35rem; tab-size: 4; }
 
 /* 键盘 kbd 标签样式 */
 kbd {
