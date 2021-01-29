@@ -4,6 +4,60 @@
   
     
     <entry>
+      <title>css实现文本溢出显示省略号</title>
+      <link href="2021/01/29/css-shi-xian-wen-ben-yi-chu-xian-shi-sheng-lue-hao/"/>
+      <url>2021/01/29/css-shi-xian-wen-ben-yi-chu-xian-shi-sheng-lue-hao/</url>
+      
+        <content type="html"><![CDATA[<center><h1>css实现文本溢出显示省略号</h1></center><h3 id="单行文本"><a href="#单行文本" class="headerlink" title="单行文本"></a>单行文本</h3><pre><code>p &#123;width: 300px;overflow: hidden;/*文本不会换行*/white-space: nowrap;/*当文本溢出包含元素时，以省略号表示超出的文本*/text-overflow: ellipsis;&#125;</code></pre><p>效果如下：</p><p><img src="/2021/01/29/css-shi-xian-wen-ben-yi-chu-xian-shi-sheng-lue-hao/1.png"></p><h3 id="多行文本"><a href="#多行文本" class="headerlink" title="多行文本"></a>多行文本</h3><ul><li>方法一</li></ul><p>对于多行文本，一种方法是使用webkit的css扩展属性，该方法适用于Safari、chrome和大多数移动端浏览器。</p><pre><code>p &#123;width: 300px;overflow: hidden;/*将对象作为弹性伸缩盒子模型显示*/display: -webkit-box;/*设置子元素排列方式*/-webkit-box-orient: vertical;/*设置显示的行数，多出的部分会显示为...*/-webkit-line-clamp: 3;&#125;</code></pre><p>效果如下：</p><p><img src="/2021/01/29/css-shi-xian-wen-ben-yi-chu-xian-shi-sheng-lue-hao/2.png"></p><ul><li>方法二</li></ul><p>使用伪元素实现，将伪元素放在最后一个字的上方，达到显示省略号的目的。该方法兼容性较好，但文字未超出的情况下也会出现省略号。</p><pre><code>p &#123;position: relative;line-height: 1.2em;max-height: 3.6em;width: 300px;/*设置文本为两端对齐*/text-align: justify;overflow: hidden;&#125; p::after &#123;content: &quot;...&quot;;position: absolute;bottom: 0;right: 0;/*将省略号的大小设置为1个字体大小*/width: 1em;/*设置背景，将最后一个字覆盖掉*/background: #fff;&#125;</code></pre><p>效果如下：</p><p><img src="/2021/01/29/css-shi-xian-wen-ben-yi-chu-xian-shi-sheng-lue-hao/2.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> css常用 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文本换行 </tag>
+            
+            <tag> css </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何注册google账号</title>
+      <link href="2021/01/29/ru-he-zhu-ce-google-zhang-hao/"/>
+      <url>2021/01/29/ru-he-zhu-ce-google-zhang-hao/</url>
+      
+        <content type="html"><![CDATA[<center><h1>如何注册Google账号</h1></center><h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>访问如下链接<br><a href="https://www.gmail.com" target="_blank">Google账号注册地址</a><br>点击右上角创建账号图标</p><p><img src="/2021/01/29/ru-he-zhu-ce-google-zhang-hao/1.png" alt="创建账号"></p><h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p>填写基本信息后点击“下一步”</p><p><img src="/2021/01/29/ru-he-zhu-ce-google-zhang-hao/2.png" alt="基本信息"></p><h2 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h2><p>填写手机号并接收短信短信验证码</p><p><img src="/2021/01/29/ru-he-zhu-ce-google-zhang-hao/3.png" alt="填写手机号"></p><h3 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h3><p>填写基本信息</p><p><img src="/2021/01/29/ru-he-zhu-ce-google-zhang-hao/4.png" alt="填写基本信息"></p><p>红框部分必须填写，用于防止万一账号丢失以后恢复账号</p><h3 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h3><p>点击同意隐私条款后，账号创建成功</p><p><img src="/2021/01/29/ru-he-zhu-ce-google-zhang-hao/5.png" alt="同意隐私条款"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 国外网站账号 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> google账号 </tag>
+            
+            <tag> 注册国外账号 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2021年免费获取比特币的浏览器</title>
       <link href="2021/01/28/bitcointest/"/>
       <url>2021/01/28/bitcointest/</url>
