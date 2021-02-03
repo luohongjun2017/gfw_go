@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>uniapp采坑日记之scroll-view</title>
+      <link href="2021/02/03/uniapp-cai-keng-ri-ji-zhi-scroll-view/"/>
+      <url>2021/02/03/uniapp-cai-keng-ri-ji-zhi-scroll-view/</url>
+      
+        <content type="html"><![CDATA[<h3 id="scroll-view"><a href="#scroll-view" class="headerlink" title="scroll-view"></a>scroll-view</h3><p>可滚动视图区域。用于区域滚动。</p><p>需注意在webview渲染的页面中，区域滚动的性能不及页面滚动。</p><pre><code>&lt;scroll-view :scroll-top=&quot;0&quot; scroll-y=&quot;true&quot; :show-scrollbar=&quot;true&quot; :lower-threshold=&quot;50&quot; @scrolltolower=&quot;lower&quot; :style=&quot;&#123; height: scrollH &#125;&quot;&gt;</code></pre><ul><li><span style="color:red;font-size:1.5rem">当scrollH为“100%”时，并不会触发@scrolltoupper、@scrolltolower、@scroll这三个事件 ;</span></li><li><span style="color:red;font-size:1.5rem">当scrollH为绝对值时（例如：100rpx,100vh），@scrolltoupper、@scrolltolower、@scroll这三个事件会触发。</span><br>对于上述结果，官网并没有给出详细的说明</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> uniapp </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> uniapp </tag>
+            
+            <tag> 采坑日记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>可以产生比特币的浏览器 2021</title>
       <link href="2021/01/31/ke-yi-chan-sheng-bi-te-bi-de-liu-lan-qi/"/>
       <url>2021/01/31/ke-yi-chan-sheng-bi-te-bi-de-liu-lan-qi/</url>

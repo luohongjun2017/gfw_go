@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.angryprogrammer.tk/2021/02/03/uniapp-cai-keng-ri-ji-zhi-scroll-view/</loc>
+    
+    <lastmod>2021-02-03</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.angryprogrammer.tk/2021/01/31/ke-yi-chan-sheng-bi-te-bi-de-liu-lan-qi/</loc>
     
     <lastmod>2021-01-31</lastmod>
@@ -123,6 +130,20 @@
   </url>
   
   <url>
+    <loc>https://www.angryprogrammer.tk/tags/uniapp/</loc>
+    <lastmod>2021-02-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.angryprogrammer.tk/tags/%E9%87%87%E5%9D%91%E6%97%A5%E8%AE%B0/</loc>
+    <lastmod>2021-02-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.angryprogrammer.tk/tags/%E5%85%8D%E8%B4%B9%E8%8E%B7%E5%8F%96%E6%AF%94%E7%89%B9%E5%B8%81/</loc>
     <lastmod>2021-02-03</lastmod>
     <changefreq>daily</changefreq>
@@ -161,6 +182,13 @@
   
   <url>
     <loc>https://www.angryprogrammer.tk/categories/%E5%BB%BA%E7%AB%99/</loc>
+    <lastmod>2021-02-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.angryprogrammer.tk/categories/uniapp/</loc>
     <lastmod>2021-02-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
