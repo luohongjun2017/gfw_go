@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.angryprogrammer.tk/2021/02/03/uniapp-cai-keng-ri-ji-zhi-scroll-view/</loc>
+    <loc>https://www.angryprogrammer.tk/2021/01/31/ke-yi-chan-sheng-bi-te-bi-de-liu-lan-qi/</loc>
     
     <lastmod>2021-02-03</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.angryprogrammer.tk/2021/01/31/ke-yi-chan-sheng-bi-te-bi-de-liu-lan-qi/</loc>
+    <loc>https://www.angryprogrammer.tk/2021/01/28/bitcointest/</loc>
     
-    <lastmod>2021-01-31</lastmod>
+    <lastmod>2021-02-03</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.angryprogrammer.tk/2021/02/03/uniapp-cai-keng-ri-ji-zhi-scroll-view/</loc>
+    
+    <lastmod>2021-02-03</lastmod>
     
   </url>
   
@@ -26,13 +33,6 @@
     <loc>https://www.angryprogrammer.tk/2021/01/29/ru-he-zhu-ce-google-zhang-hao/</loc>
     
     <lastmod>2021-01-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.angryprogrammer.tk/2021/01/28/bitcointest/</loc>
-    
-    <lastmod>2021-01-28</lastmod>
     
   </url>
   
@@ -102,6 +102,13 @@
   </url>
   
   <url>
+    <loc>https://www.angryprogrammer.tk/tags/%E5%85%8D%E8%B4%B9%E6%8C%96%E7%9F%BF/</loc>
+    <lastmod>2021-02-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.angryprogrammer.tk/tags/%E6%96%87%E6%9C%AC%E6%8D%A2%E8%A1%8C/</loc>
     <lastmod>2021-02-03</lastmod>
     <changefreq>daily</changefreq>
@@ -144,13 +151,6 @@
   </url>
   
   <url>
-    <loc>https://www.angryprogrammer.tk/tags/%E5%85%8D%E8%B4%B9%E8%8E%B7%E5%8F%96%E6%AF%94%E7%89%B9%E5%B8%81/</loc>
-    <lastmod>2021-02-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.angryprogrammer.tk/tags/google%E8%B4%A6%E5%8F%B7/</loc>
     <lastmod>2021-02-03</lastmod>
     <changefreq>daily</changefreq>
@@ -159,6 +159,13 @@
   
   <url>
     <loc>https://www.angryprogrammer.tk/tags/%E6%B3%A8%E5%86%8C%E5%9B%BD%E5%A4%96%E8%B4%A6%E5%8F%B7/</loc>
+    <lastmod>2021-02-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.angryprogrammer.tk/tags/%E5%85%8D%E8%B4%B9%E8%8E%B7%E5%8F%96%E6%AF%94%E7%89%B9%E5%B8%81/</loc>
     <lastmod>2021-02-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -189,6 +196,13 @@
   
   <url>
     <loc>https://www.angryprogrammer.tk/categories/uniapp/</loc>
+    <lastmod>2021-02-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.angryprogrammer.tk/categories/%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81/%E5%85%8D%E8%B4%B9%E6%8C%96%E7%9F%BF/</loc>
     <lastmod>2021-02-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
