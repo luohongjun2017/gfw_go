@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="uniapp采坑日记之scroll-view, 大数据,机器学习,软件开发,建站,手机APP,比特币">
+    <meta name="keywords" content="一种检查jar是否含有安全漏洞的工具dependency-check, 大数据,机器学习,软件开发,建站,手机APP,比特币">
     <meta name="description" content="集大数据、机器学习、软件开发、建站、手机APP、比特币等一体的现代化综合服务商">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>uniapp采坑日记之scroll-view | 愤怒的程序员</title>
+    <title>一种检查jar是否含有安全漏洞的工具dependency-check | 愤怒的程序员</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -247,12 +247,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">uniapp采坑日记之scroll-view</h1>
+                    <h1 class="description center-align post-title">一种检查jar是否含有安全漏洞的工具dependency-check</h1>
                 </div>
             </div>
         </div>
@@ -368,12 +368,16 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/uniapp/">
-                                <span class="chip bg-color">uniapp</span>
+                            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8/">
+                                <span class="chip bg-color">数据安全</span>
                             </a>
                         
-                            <a href="/tags/%E9%87%87%E5%9D%91%E6%97%A5%E8%AE%B0/">
-                                <span class="chip bg-color">采坑日记</span>
+                            <a href="/tags/java/">
+                                <span class="chip bg-color">java</span>
+                            </a>
+                        
+                            <a href="/tags/dependency-check/">
+                                <span class="chip bg-color">dependency-check</span>
                             </a>
                         
                     </div>
@@ -384,8 +388,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/uniapp/" class="post-category">
-                                uniapp
+                            <a href="/categories/java/" class="post-category">
+                                java
                             </a>
                         
                     </div>
@@ -397,7 +401,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-02-03
+                    2021-02-04
                 </div>
                 
 
@@ -418,15 +422,18 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="scroll-view"><a href="#scroll-view" class="headerlink" title="scroll-view"></a>scroll-view</h3><p>可滚动视图区域。用于区域滚动。</p>
-<p>需注意在webview渲染的页面中，区域滚动的性能不及页面滚动。</p>
-<pre><code>
-&lt;scroll-view :scroll-top=&quot;0&quot; scroll-y=&quot;true&quot; :show-scrollbar=&quot;true&quot; :lower-threshold=&quot;50&quot; @scrolltolower=&quot;lower&quot; :style=&quot;&#123; height: scrollH &#125;&quot;&gt;
-</code></pre>
-<ul>
-<li><span style="color:red;font-size:1.5rem">当scrollH为“100%”时，并不会触发@scrolltoupper、@scrolltolower、@scroll这三个事件 ;</span></li>
-<li><span style="color:red;font-size:1.5rem">当scrollH为绝对值时（例如：100rpx,100vh），@scrolltoupper、@scrolltolower、@scroll这三个事件会触发。</span><br>对于上述结果，官网并没有给出详细的说明</li>
-</ul>
+                <p>依赖性检查的目的是帮助通知开发人员和安全专业人员Jeff Williams和Arshan Dabirsiaghi在AppSec DC 2012上的主题为“不安全的图书馆的不幸现实”中讨论的问题。演示的要旨是，作为开发社区，我们在包含众所周知的已发布漏洞（例如，国家漏洞数据库）的应用程序中包含第三方库。</p>
+<p>当前，dependency-check是一种用于扫描目录和文件的（java）命令行工具。如果它包含可以扫描特定文件类型的分析器，则将收集有关该文件的信息。然后，此信息用于标识通用平台枚举（CPE）。如果标识了CPE，则在报告中列出相关的常见漏洞和披露（CVE）条目的列表。</p>
+<p>依赖关系检查会使用NIST托管的NVD数据Feed自动更新自身。注意：初始下载数据可能需要五分钟或更长时间。如果该工具至少每7天运行一次，则只需下载一个小的XML文件即可使数据保持最新。</p>
+<p><img src="/2021/02/04/yi-chong-jian-cha-jar-shi-fou-han-you-an-quan-lou-dong-de-gong-ju-dependency-check/1.png" alt="不设置本地镜像结果"></p>
+<p><span style="color:red">注意几个参数</span></p>
+<p>–cveUrlModified 为本地nvd库的url/nvdcve-1.1-modified.json.gz</p>
+<p>–cveUrlBase 为本地nvd库的url/nvdcve-1.1-2020.json.gz</p>
+<p>本地nvd库可以通过apache或nginx自行搭建并上传nvd文件</p>
+<p><img src="/2021/02/04/yi-chong-jian-cha-jar-shi-fou-han-you-an-quan-lou-dong-de-gong-ju-dependency-check/2.png" alt="使用本地镜像执行结果"></p>
+<p>漏洞检查报告如下：</p>
+<p><img src="/2021/02/04/yi-chong-jian-cha-jar-shi-fou-han-you-an-quan-lou-dong-de-gong-ju-dependency-check/3.png" alt="漏洞检查结果"></p>
+<p><span style="color:red;font-weight:bold;font-size:1.5rem">ps:一般针对高危漏洞进行修复</span></p>
 
                 
             </div>
@@ -453,7 +460,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://www.angryprogrammer.tk/2021/02/03/uniapp-cai-keng-ri-ji-zhi-scroll-view/">https://www.angryprogrammer.tk/2021/02/03/uniapp-cai-keng-ri-ji-zhi-scroll-view/</a>
+                    <a href="https://www.angryprogrammer.tk/2021/02/04/yi-chong-jian-cha-jar-shi-fou-han-you-an-quan-lou-dong-de-gong-ju-dependency-check/">https://www.angryprogrammer.tk/2021/02/04/yi-chong-jian-cha-jar-shi-fou-han-you-an-quan-lou-dong-de-gong-ju-dependency-check/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -491,12 +498,16 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/uniapp/">
-                                    <span class="chip bg-color">uniapp</span>
+                                <a href="/tags/%E6%95%B0%E6%8D%AE%E5%AE%89%E5%85%A8/">
+                                    <span class="chip bg-color">数据安全</span>
                                 </a>
                             
-                                <a href="/tags/%E9%87%87%E5%9D%91%E6%97%A5%E8%AE%B0/">
-                                    <span class="chip bg-color">采坑日记</span>
+                                <a href="/tags/java/">
+                                    <span class="chip bg-color">java</span>
+                                </a>
+                            
+                                <a href="/tags/dependency-check/">
+                                    <span class="chip bg-color">dependency-check</span>
                                 </a>
                             
                         </div>
@@ -668,9 +679,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/02/04/yi-chong-jian-cha-jar-shi-fou-han-you-an-quan-lou-dong-de-gong-ju-dependency-check/">
                     <div class="card-image">
@@ -688,9 +700,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-02-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-04
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -703,6 +715,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -729,13 +742,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/01/31/ke-yi-chan-sheng-bi-te-bi-de-liu-lan-qi/">
+                <a href="/2021/02/03/uniapp-cai-keng-ri-ji-zhi-scroll-view/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="可以产生比特币的浏览器 2021">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="uniapp采坑日记之scroll-view">
                         
-                        <span class="card-title">可以产生比特币的浏览器 2021</span>
+                        <span class="card-title">uniapp采坑日记之scroll-view</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -746,18 +759,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-01-31
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-03
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81/" class="post-category">
-                                    数字货币
-                                </a>
-                            
-                            <a href="/categories/%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81/%E5%85%8D%E8%B4%B9%E6%8C%96%E7%9F%BF/" class="post-category">
-                                    免费挖矿
+                            <a href="/categories/uniapp/" class="post-category">
+                                    uniapp
                                 </a>
                             
                             
@@ -767,20 +776,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%AF%94%E7%89%B9%E5%B8%81/">
-                        <span class="chip bg-color">比特币</span>
+                    <a href="/tags/uniapp/">
+                        <span class="chip bg-color">uniapp</span>
                     </a>
                     
-                    <a href="/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/">
-                        <span class="chip bg-color">浏览器</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%85%8D%E8%B4%B9%E6%8C%96%E7%9F%BF/">
-                        <span class="chip bg-color">免费挖矿</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%85%8D%E8%B4%B9%E8%8E%B7%E5%8F%96%E6%AF%94%E7%89%B9%E5%B8%81/">
-                        <span class="chip bg-color">免费获取比特币</span>
+                    <a href="/tags/%E9%87%87%E5%9D%91%E6%97%A5%E8%AE%B0/">
+                        <span class="chip bg-color">采坑日记</span>
                     </a>
                     
                 </div>

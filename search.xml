@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>一种检查jar是否含有安全漏洞的工具dependency-check</title>
+      <link href="2021/02/04/yi-chong-jian-cha-jar-shi-fou-han-you-an-quan-lou-dong-de-gong-ju-dependency-check/"/>
+      <url>2021/02/04/yi-chong-jian-cha-jar-shi-fou-han-you-an-quan-lou-dong-de-gong-ju-dependency-check/</url>
+      
+        <content type="html"><![CDATA[<p>依赖性检查的目的是帮助通知开发人员和安全专业人员Jeff Williams和Arshan Dabirsiaghi在AppSec DC 2012上的主题为“不安全的图书馆的不幸现实”中讨论的问题。演示的要旨是，作为开发社区，我们在包含众所周知的已发布漏洞（例如，国家漏洞数据库）的应用程序中包含第三方库。</p><p>当前，dependency-check是一种用于扫描目录和文件的（java）命令行工具。如果它包含可以扫描特定文件类型的分析器，则将收集有关该文件的信息。然后，此信息用于标识通用平台枚举（CPE）。如果标识了CPE，则在报告中列出相关的常见漏洞和披露（CVE）条目的列表。</p><p>依赖关系检查会使用NIST托管的NVD数据Feed自动更新自身。注意：初始下载数据可能需要五分钟或更长时间。如果该工具至少每7天运行一次，则只需下载一个小的XML文件即可使数据保持最新。</p><p><img src="/2021/02/04/yi-chong-jian-cha-jar-shi-fou-han-you-an-quan-lou-dong-de-gong-ju-dependency-check/1.png" alt="不设置本地镜像结果"></p><p><span style="color:red">注意几个参数</span></p><p>–cveUrlModified 为本地nvd库的url/nvdcve-1.1-modified.json.gz</p><p>–cveUrlBase 为本地nvd库的url/nvdcve-1.1-2020.json.gz</p><p>本地nvd库可以通过apache或nginx自行搭建并上传nvd文件</p><p><img src="/2021/02/04/yi-chong-jian-cha-jar-shi-fou-han-you-an-quan-lou-dong-de-gong-ju-dependency-check/2.png" alt="使用本地镜像执行结果"></p><p>漏洞检查报告如下：</p><p><img src="/2021/02/04/yi-chong-jian-cha-jar-shi-fou-han-you-an-quan-lou-dong-de-gong-ju-dependency-check/3.png" alt="漏洞检查结果"></p><p><span style="color:red;font-weight:bold;font-size:1.5rem">ps:一般针对高危漏洞进行修复</span></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数据安全 </tag>
+            
+            <tag> java </tag>
+            
+            <tag> dependency-check </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>uniapp采坑日记之scroll-view</title>
       <link href="2021/02/03/uniapp-cai-keng-ri-ji-zhi-scroll-view/"/>
       <url>2021/02/03/uniapp-cai-keng-ri-ji-zhi-scroll-view/</url>
