@@ -144,20 +144,6 @@
   </url>
   
   <url>
-    <loc>https://www.angryprogrammer.tk/tags/Hexo/</loc>
-    <lastmod>2021-03-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.angryprogrammer.tk/tags/github/</loc>
-    <lastmod>2021-03-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.angryprogrammer.tk/tags/%E6%96%87%E6%9C%AC%E6%8D%A2%E8%A1%8C/</loc>
     <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
@@ -166,6 +152,20 @@
   
   <url>
     <loc>https://www.angryprogrammer.tk/tags/css/</loc>
+    <lastmod>2021-03-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.angryprogrammer.tk/tags/Hexo/</loc>
+    <lastmod>2021-03-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.angryprogrammer.tk/tags/github/</loc>
     <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -214,20 +214,6 @@
   </url>
   
   <url>
-    <loc>https://www.angryprogrammer.tk/tags/%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD/</loc>
-    <lastmod>2021-03-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.angryprogrammer.tk/tags/SpringBoot/</loc>
-    <lastmod>2021-03-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.angryprogrammer.tk/tags/google%E8%B4%A6%E5%8F%B7/</loc>
     <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
@@ -236,6 +222,20 @@
   
   <url>
     <loc>https://www.angryprogrammer.tk/tags/%E6%B3%A8%E5%86%8C%E5%9B%BD%E5%A4%96%E8%B4%A6%E5%8F%B7/</loc>
+    <lastmod>2021-03-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.angryprogrammer.tk/tags/%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD/</loc>
+    <lastmod>2021-03-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.angryprogrammer.tk/tags/SpringBoot/</loc>
     <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -272,14 +272,14 @@
   </url>
   
   <url>
-    <loc>https://www.angryprogrammer.tk/categories/%E5%BB%BA%E7%AB%99/</loc>
+    <loc>https://www.angryprogrammer.tk/categories/css%E5%B8%B8%E7%94%A8/</loc>
     <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.angryprogrammer.tk/categories/css%E5%B8%B8%E7%94%A8/</loc>
+    <loc>https://www.angryprogrammer.tk/categories/%E5%BB%BA%E7%AB%99/</loc>
     <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
