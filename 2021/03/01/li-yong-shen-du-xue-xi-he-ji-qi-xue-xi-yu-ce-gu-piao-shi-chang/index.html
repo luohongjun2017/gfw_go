@@ -1,0 +1,1670 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="利用深度学习和机器学习预测股票市场, 大数据,机器学习,软件开发,建站,手机APP,比特币">
+    <meta name="description" content="集大数据、机器学习、软件开发、建站、手机APP、比特币等一体的现代化综合服务商">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>利用深度学习和机器学习预测股票市场 | 愤怒的程序员</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 5.3.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">愤怒的程序员</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">愤怒的程序员</div>
+        <div class="logo-desc">
+            
+            集大数据、机器学习、软件开发、建站、手机APP、比特币等一体的现代化综合服务商
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">利用深度学习和机器学习预测股票市场</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/python/" class="post-category">
+                                python
+                            </a>
+                        
+                            <a href="/categories/python/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                机器学习
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2021-03-01
+                </div>
+                
+
+                
+
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <center style="font-size: 26px;font-weight: bolder;">利用深度学习和机器学习预测股票市场（附代码）</center>
+
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;预测股市将如何变化历来是最困难的事情之一。这个预测行为中包含着如此之多的因素—包括物理或心理因素、理性或者不理性行为因素等等。所有这些因素结合在一起，使得股价波动剧烈，很难准确预测。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;使用机器学习可能改变游戏规则吗？机器学习技术使用最新的组织公告、季度收益等作为特征，有潜力挖掘出我们以前没有见过的模式和见解，并可用于准确无误的预测。</p>
+<p><img src="/2021/03/01/li-yong-shen-du-xue-xi-he-ji-qi-xue-xi-yu-ce-gu-piao-shi-chang/1.png"></p>
+<p>在本文中，我们将研究上市公司股价的历史数据。我们将结合机器学习算法来预测这家公司的未来股价，从平均和线性回归这样的简单算法开始，然后转向像Auto ARIMA和LSTM这样的高级模型。</p>
+<p>本文背后的核心思想是展示这些算法是如何实现的，因此我只会简单描述该技术并提供相关参考链接，以便在必要时对这些概念进行复习。如果您是时间序列领域的新手，我建议您先阅读以下文章:</p>
+<ul>
+<li>创建时间序列预测的初学者综合指南</li>
+<li>时间序列建模的完整教程</li>
+</ul>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><ol>
+<li><p>问题理解</p>
+</li>
+<li><p>移动平均</p>
+</li>
+<li><p>线性回归</p>
+</li>
+<li><p>K-近邻</p>
+</li>
+<li><p>自动ARIMA</p>
+</li>
+<li><p>先知（Prophet）</p>
+</li>
+<li><p>长短时记忆网络（LSTM）</p>
+</li>
+</ol>
+<h3 id="1、问题理解"><a href="#1、问题理解" class="headerlink" title="1、问题理解"></a>1、问题理解</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;我们将很快深入本文的实现部分，但首先重要的是确定我们要解决的问题。一般来说，股票市场分析分为两个部分——基本面分析和技术分析。</p>
+<ul>
+<li><p>基本面分析是根据公司目前的经营环境和财务状况，对公司未来的盈利能力进行分析。</p>
+</li>
+<li><p>技术分析包括阅读图表和使用统计数字来确定股票市场的趋势。</p>
+</li>
+</ul>
+<p>您可能已经猜到，我们的重点将放在技术分析部分。我们将使用来自Quandl的数据集(您可以在这里找到各种股票的历史数据)，这个项目中，我使用了“塔塔全球饮料”的数据。是时候开始了!</p>
+<p>首先让我们加载数据集，定义问题的目标变量:</p>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token comment" spellcheck="true">#import packages</span>
+<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
+<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
+
+<span class="token comment" spellcheck="true">#to plot within notebook</span>
+<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
+<span class="token operator">%</span>matplotlib inline
+
+<span class="token comment" spellcheck="true">#setting figure size</span>
+<span class="token keyword">from</span> matplotlib<span class="token punctuation">.</span>pylab <span class="token keyword">import</span> rcParams
+rcParams<span class="token punctuation">[</span><span class="token string">'figure.figsize'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">20</span><span class="token punctuation">,</span><span class="token number">10</span>
+
+<span class="token comment" spellcheck="true">#for normalizing data</span>
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>preprocessing <span class="token keyword">import</span> MinMaxScaler
+scaler <span class="token operator">=</span> MinMaxScaler<span class="token punctuation">(</span>feature_range<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">#read the file</span>
+df <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">'NSE-TATAGLOBAL(1).csv'</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">#print the head</span>
+df<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="/2021/03/01/li-yong-shen-du-xue-xi-he-ji-qi-xue-xi-yu-ce-gu-piao-shi-chang/2.png"></p>
+<p>数据集中有多个变量——日期（date）、开盘价(open)、最高价(high)、最低价(low)、最后交易价(last)、收盘价(close)、总交易额(total_trade_quantity)和营业额(turnover)。</p>
+<ul>
+<li><p>开盘价和收盘价代表股票在某一天交易的起始价和最终价。</p>
+</li>
+<li><p>最高价、最低价和最后交易价表示当天股票的最高价、最低价和最后交易价格。</p>
+</li>
+<li><p>交易总量是指当天买卖的股票数量，而营业额(Lacs)是指某一特定公司在某一特定日期的营业额。</p>
+</li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;要注意的另一点是，市场在周末和公共假期休市。注意上表缺失了一些日期值——2/10/2018、6/10/2018、7/10/2018。其中2号是国庆节，6号和7号是周末。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;损益的计算通常由股票当日的收盘价决定，因此我们将收盘价作为目标变量。让我们画出目标变量来理解它在我们的数据集中的分布:</p>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token comment" spellcheck="true">#setting index as date</span>
+df<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span> <span class="token operator">=</span> pd<span class="token punctuation">.</span>to_datetime<span class="token punctuation">(</span>df<span class="token punctuation">.</span>Date<span class="token punctuation">,</span>format<span class="token operator">=</span><span class="token string">'%Y-%m-%d'</span><span class="token punctuation">)</span>
+df<span class="token punctuation">.</span>index <span class="token operator">=</span> df<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">#plot</span>
+plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>df<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'Close Price history'</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="/2021/03/01/li-yong-shen-du-xue-xi-he-ji-qi-xue-xi-yu-ce-gu-piao-shi-chang/3.png"></p>
+<p>在接下来的部分中，我们将探索这些变量，并使用不同的技术来预测股票的每日收盘价。</p>
+<h3 id="2、移动平均"><a href="#2、移动平均" class="headerlink" title="2、移动平均"></a>2、移动平均</h3><h5 id="简介-1"><a href="#简介-1" class="headerlink" title="简介"></a>简介</h5><p>&nbsp;&nbsp;&nbsp;&nbsp;“平均数”是我们日常生活中最常用的统计量之一。例如，计算平均分数来确定整体表现，或者根据过去几天的平均温度来了解今天的温度——这些都是我们经常做的日常工作。因此，使用这个方法开始用数据集进行预测是个不错的选择。</p>
+<p>我们利用一组先前观测值的平均值作为每天的预期收盘价。我们将使用移动平均法，而不是使用简单的平均值，移动平均法使用最近的一组数据计算预测值。换句话说，对于后续的每个新的时间，在考虑预测值时，将从集合中删除最早的观测值，并加入上一个观测值。下面是一个简单的图，它将帮助您更清楚地理解这一点。</p>
+<p><img src="/2021/03/01/li-yong-shen-du-xue-xi-he-ji-qi-xue-xi-yu-ce-gu-piao-shi-chang/4.png"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;我们将在数据集上使用这种技术。第一步是创建一个只包含日期和收盘价列的数据框，然后将其拆分为训练集和验证集来验证我们的预测。</p>
+<h5 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h5><pre class="line-numbers language-python"><code class="language-python">
+<span class="token comment" spellcheck="true">#creating dataframe with date and the target variable</span>
+data <span class="token operator">=</span> df<span class="token punctuation">.</span>sort_index<span class="token punctuation">(</span>ascending<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
+new_data <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>index<span class="token operator">=</span>range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>len<span class="token punctuation">(</span>df<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">,</span> <span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>len<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+     new_data<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+     new_data<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token comment" spellcheck="true">#splitting into train and validation</span>
+train <span class="token operator">=</span> new_data<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">987</span><span class="token punctuation">]</span>
+valid <span class="token operator">=</span> new_data<span class="token punctuation">[</span><span class="token number">987</span><span class="token punctuation">:</span><span class="token punctuation">]</span> 
+new_data<span class="token punctuation">.</span>shape<span class="token punctuation">,</span> train<span class="token punctuation">.</span>shape<span class="token punctuation">,</span> valid<span class="token punctuation">.</span>shape
+<span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">1235</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">987</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">248</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+train<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>min<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> train<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>max<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> valid<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>min<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> valid<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>max<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">(</span>Timestamp<span class="token punctuation">(</span><span class="token string">'2013-10-08 00:00:00'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+Timestamp<span class="token punctuation">(</span><span class="token string">'2017-10-06 00:00:00'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+Timestamp<span class="token punctuation">(</span><span class="token string">'2017-10-09 00:00:00'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+Timestamp<span class="token punctuation">(</span><span class="token string">'2018-10-08 00:00:00'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>下一步是为验证集创建预测值，并使用真实值来检查RMSE误差。</p>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token comment" spellcheck="true">#make predictions</span>
+preds <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">248</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    a <span class="token operator">=</span> train<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>len<span class="token punctuation">(</span>train<span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">248</span><span class="token operator">+</span>i<span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">.</span>sum<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> sum<span class="token punctuation">(</span>preds<span class="token punctuation">)</span>
+    b <span class="token operator">=</span> a<span class="token operator">/</span><span class="token number">248</span>
+    preds<span class="token punctuation">.</span>append<span class="token punctuation">(</span>b<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h5 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h5><pre class="line-numbers language-python"><code class="language-python">
+<span class="token comment" spellcheck="true">#calculate rmse</span>
+rms<span class="token operator">=</span>np<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span>np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>np<span class="token punctuation">.</span>power<span class="token punctuation">(</span><span class="token punctuation">(</span>np<span class="token punctuation">.</span>array<span class="token punctuation">(</span>valid<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">-</span>preds<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+rms
+
+<span class="token number">104.51415465984348</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>仅仅检查RMSE并不能帮助我们评估模型预测效果的。让我们通过做图得到更直观的理解。下面是预测值和实际值的曲线图。</p>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token comment" spellcheck="true">#plot</span>
+valid<span class="token punctuation">[</span><span class="token string">'Predictions'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>
+valid<span class="token punctuation">[</span><span class="token string">'Predictions'</span><span class="token punctuation">]</span> <span class="token operator">=</span> preds
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>train<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>valid<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">,</span> <span class="token string">'Predictions'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="/2021/03/01/li-yong-shen-du-xue-xi-he-ji-qi-xue-xi-yu-ce-gu-piao-shi-chang/5.png"></p>
+<h5 id="推论"><a href="#推论" class="headerlink" title="推论"></a>推论</h5><p>RMSE值接近105，但是结果不是很理想(从图中可以看出)。预测值与训练集的观测值的范围相同(开始有上升趋势，然后缓慢下降)。</p>
+<p>在下一节中，我们将使用两种常用的机器学习技术——线性回归和kNN，看看它们在我们的股票市场数据上表现如何。</p>
+<h3 id="3、线性回归"><a href="#3、线性回归" class="headerlink" title="3、线性回归"></a>3、线性回归</h3><h5 id="简介-2"><a href="#简介-2" class="headerlink" title="简介"></a>简介</h5><p>在这些数据上可以实现的最基本的机器学习算法是线性回归。线性回归模型生成一个确定自变量和因变量之间关系的方程。</p>
+<p> 线性回归方程可以写成：</p>
+<p><img src="/2021/03/01/li-yong-shen-du-xue-xi-he-ji-qi-xue-xi-yu-ce-gu-piao-shi-chang/6.png"></p>
+<p>在这里x1, x2, ….xn代表自变量,系数θ1,θ2,….θn代表权重。你可以参考下面的文章来更详细地学习线性回归:</p>
+<ul>
+<li>对于线性回归和Lasso回归的一个综合的初学者指南.</li>
+</ul>
+<p>我们的问题中，没有太多的自变量，只有日期。让我们使用时间（date）列提取特征，如- day, month, year, mon/fri等，然后拟合线性回归模型。</p>
+<h5 id="实现-1"><a href="#实现-1" class="headerlink" title="实现"></a>实现</h5><p>我们将首先按升序对数据集进行排序，然后创建一个单独的数据集，这样创建的任何新特性都不会影响原始数据。</p>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token comment" spellcheck="true">#setting index as date values</span>
+df<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span> <span class="token operator">=</span> pd<span class="token punctuation">.</span>to_datetime<span class="token punctuation">(</span>df<span class="token punctuation">.</span>Date<span class="token punctuation">,</span>format<span class="token operator">=</span><span class="token string">'%Y-%m-%d'</span><span class="token punctuation">)</span>
+df<span class="token punctuation">.</span>index <span class="token operator">=</span> df<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">#sorting</span>
+data <span class="token operator">=</span> df<span class="token punctuation">.</span>sort_index<span class="token punctuation">(</span>ascending<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">#creating a separate dataset</span>
+new_data <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>index<span class="token operator">=</span>range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>len<span class="token punctuation">(</span>df<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">,</span> <span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>len<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    new_data<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+    new_data<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+
+
+<span class="token comment" spellcheck="true">#create features</span>
+<span class="token keyword">from</span> fastai<span class="token punctuation">.</span>structured <span class="token keyword">import</span>  add_datepart
+add_datepart<span class="token punctuation">(</span>new_data<span class="token punctuation">,</span> <span class="token string">'Date'</span><span class="token punctuation">)</span>
+new_data<span class="token punctuation">.</span>drop<span class="token punctuation">(</span><span class="token string">'Elapsed'</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> inplace<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>  <span class="token comment" spellcheck="true">#elapsed will be the time stamp</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这将创建以下特征：</p>
+<blockquote>
+<p>‘Year’, ‘Month’, ‘Week’, ‘Day’, ‘Dayofweek’, ‘Dayofyear’, ‘Is_month_end’, ‘Is_month_start’, ‘Is_quarter_end’, ‘Is_quarter_start’,  ‘Is_year_end’, and  ‘Is_year_start’.</p>
+</blockquote>
+<p>注意:我使用了来自fastai库的add_datepart。如果您没有安装它，您可以简单地使用命令pip install fastai。您也可以使用python中的简单for循环来创建这些特性。我在下面展示了一个例子。</p>
+<p> 除此之外，我们还可以添加自己的一组特性，我们认为这些特性与预测相关。例如，我的假设是，本周的头几天和最后几天对股票收盘价的影响可能远远超过其他日子。因此，我创建了一个特性来识别给定的一天是星期一/星期五还是星期二/星期三/星期四。这可以用以下几行代码来完成:</p>
+<pre class="line-numbers language-python"><code class="language-python">
+new_data<span class="token punctuation">[</span><span class="token string">'mon_fri'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>len<span class="token punctuation">(</span>new_data<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>new_data<span class="token punctuation">[</span><span class="token string">'Dayofweek'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token operator">or</span> new_data<span class="token punctuation">[</span><span class="token string">'Dayofweek'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        new_data<span class="token punctuation">[</span><span class="token string">'mon_fri'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        new_data<span class="token punctuation">[</span><span class="token string">'mon_fri'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>如果是星期日或星期五，列值将为1，否则为0。类似地，您可以创建多个特性。如果你对有助于预测股价的特征有一些想法，请在留言里分享。</p>
+<p>现在我们将把数据分成训练集和验证集来检查模型的性能。</p>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token comment" spellcheck="true">#split into train and validation</span>
+train <span class="token operator">=</span> new_data<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">987</span><span class="token punctuation">]</span>
+valid <span class="token operator">=</span> new_data<span class="token punctuation">[</span><span class="token number">987</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+
+x_train <span class="token operator">=</span> train<span class="token punctuation">.</span>drop<span class="token punctuation">(</span><span class="token string">'Close'</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+y_train <span class="token operator">=</span> train<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span>
+x_valid <span class="token operator">=</span> valid<span class="token punctuation">.</span>drop<span class="token punctuation">(</span><span class="token string">'Close'</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+y_valid <span class="token operator">=</span> valid<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">#implement linear regression</span>
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>linear_model <span class="token keyword">import</span> LinearRegression
+model <span class="token operator">=</span> LinearRegression<span class="token punctuation">(</span><span class="token punctuation">)</span>
+model<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>x_train<span class="token punctuation">,</span>y_train<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h5 id="结果-1"><a href="#结果-1" class="headerlink" title="结果"></a>结果</h5><pre><code>
+#make predictions and find the rmse
+preds = model.predict(x_valid)
+rms=np.sqrt(np.mean(np.power((np.array(y_valid)-np.array(preds)),2)))
+rms
+
+121.16291596523156
+</code></pre>
+<p>RMSE值高于之前的方法，这清楚地表明线性回归的表现很差。让我们看看这个图，并理解为什么线性回归预测效果不是很好:</p>
+<pre><code>
+#plot
+valid[&#39;Predictions&#39;] = 0
+valid[&#39;Predictions&#39;] = preds
+
+
+valid.index = new_data[987:].index
+train.index = new_data[:987].index
+
+plt.plot(train[&#39;Close&#39;])
+plt.plot(valid[[&#39;Close&#39;, &#39;Predictions&#39;]])
+</code></pre>
+<p><img src="/2021/03/01/li-yong-shen-du-xue-xi-he-ji-qi-xue-xi-yu-ce-gu-piao-shi-chang/7.png"></p>
+<h5 id="推论-1"><a href="#推论-1" class="headerlink" title="推论"></a>推论</h5><p>线性回归是一种简单的技术，很容易解释，但也有一些明显的缺点。使用回归算法的一个问题是，模型过度拟合了日期和月份。模型将考虑一个月前相同日期或一年前相同日期/月的值，而不是从预测的角度考虑以前的值。</p>
+<p>从上图可以看出，2016年1月和2017年1月，股价出现下跌。该模型预测2018年1月也将如此。线性回归技术可以很好地解决像大卖场销售这样的问题，在这些问题中，独立的特征对于确定目标值是有用的。</p>
+<h3 id="4、k-近邻"><a href="#4、k-近邻" class="headerlink" title="4、k-近邻"></a>4、k-近邻</h3><h5 id="简介-3"><a href="#简介-3" class="headerlink" title="简介"></a>简介</h5><p>另一个有趣的ML算法是kNN (k近邻)。基于自变量，kNN可以发现新数据点与旧数据点之间的相似性。让我用一个简单的例子来解释这个问题。</p>
+<p>考虑11个人的身高和年龄。根据给定的特征(“年龄”和“身高”)，下表可以用图形形式表示，如下图所示:</p>
+<p><img src="/2021/03/01/li-yong-shen-du-xue-xi-he-ji-qi-xue-xi-yu-ce-gu-piao-shi-chang/8.png"></p>
+<p>为了确定ID #11的权重，kNN考虑该ID的最近邻居的权重。ID #11的权重被预测为其邻居的平均值。如果我们现在考虑三个邻居(k=3)， ID#11的重量将是= (77+72+60)/3 = 69.66 kg。</p>
+<p><img src="/2021/03/01/li-yong-shen-du-xue-xi-he-ji-qi-xue-xi-yu-ce-gu-piao-shi-chang/9.png"></p>
+<p>对于kNN的详细了解，可以参考以下文章：</p>
+<ul>
+<li><p>k近邻介绍:简介</p>
+</li>
+<li><p>对k近邻回归算法的实际介绍</p>
+</li>
+</ul>
+<h5 id="实现-2"><a href="#实现-2" class="headerlink" title="实现"></a>实现</h5><pre class="line-numbers language-python"><code class="language-python">
+<span class="token comment" spellcheck="true">#importing libraries</span>
+<span class="token keyword">from</span> sklearn <span class="token keyword">import</span> neighbors
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>model_selection <span class="token keyword">import</span> GridSearchCV
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>preprocessing <span class="token keyword">import</span> MinMaxScaler
+scaler <span class="token operator">=</span> MinMaxScaler<span class="token punctuation">(</span>feature_range<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>使用上一节中相同的训练和验证集:</p>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token comment" spellcheck="true">#scaling data</span>
+x_train_scaled <span class="token operator">=</span> scaler<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>x_train<span class="token punctuation">)</span>
+x_train <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>x_train_scaled<span class="token punctuation">)</span>
+x_valid_scaled <span class="token operator">=</span> scaler<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>x_valid<span class="token punctuation">)</span>
+x_valid <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>x_valid_scaled<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">#using gridsearch to find the best parameter</span>
+params <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">'n_neighbors'</span><span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">}</span>
+knn <span class="token operator">=</span> neighbors<span class="token punctuation">.</span>KNeighborsRegressor<span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+
+model <span class="token operator">=</span> GridSearchCV<span class="token punctuation">(</span>knn<span class="token punctuation">,</span> params<span class="token punctuation">,</span> cv<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">#fit the model and make predictions</span>
+model<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>x_train<span class="token punctuation">,</span>y_train<span class="token punctuation">)</span>
+preds <span class="token operator">=</span> model<span class="token punctuation">.</span>predict<span class="token punctuation">(</span>x_valid<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h5 id="结果-2"><a href="#结果-2" class="headerlink" title="结果"></a>结果</h5><pre class="line-numbers language-python"><code class="language-python">
+<span class="token comment" spellcheck="true">#rmse</span>
+rms<span class="token operator">=</span>np<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span>np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>np<span class="token punctuation">.</span>power<span class="token punctuation">(</span><span class="token punctuation">(</span>np<span class="token punctuation">.</span>array<span class="token punctuation">(</span>y_valid<span class="token punctuation">)</span><span class="token operator">-</span>np<span class="token punctuation">.</span>array<span class="token punctuation">(</span>preds<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+rms
+
+<span class="token number">115.17086550026721</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>RMSE值并没有太大的差异，但是一个预测值和实际值的曲线图应该提供一个更清晰的理解。</p>
+<pre class="line-numbers language-python"><code class="language-python">
+<span class="token comment" spellcheck="true">#plot</span>
+valid<span class="token punctuation">[</span><span class="token string">'Predictions'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>
+valid<span class="token punctuation">[</span><span class="token string">'Predictions'</span><span class="token punctuation">]</span> <span class="token operator">=</span> preds
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>valid<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">,</span> <span class="token string">'Predictions'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>train<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="/2021/03/01/li-yong-shen-du-xue-xi-he-ji-qi-xue-xi-yu-ce-gu-piao-shi-chang/10.png"></p>
+<h5 id="推论-2"><a href="#推论-2" class="headerlink" title="推论"></a>推论</h5><p>RMSE值与线性回归模型近似，图中呈现出相同的模式。与线性回归一样，kNN也发现了2018年1月的下降，因为这是过去几年的模式。我们可以有把握地说，回归算法在这个数据集上表现得并不好。</p>
+<p>让我们来看一些时间序列预测技术，看看它们在面对股价预测挑战时的表现。</p>
+<h3 id="5、自动ARIMA"><a href="#5、自动ARIMA" class="headerlink" title="5、自动ARIMA"></a>5、自动ARIMA</h3><h5 id="简介-4"><a href="#简介-4" class="headerlink" title="简介"></a>简介</h5><p>ARIMA是一种非常流行的时间序列预测统计方法。ARIMA模型使用过去的值来预测未来的值。ARIMA中有三个重要参数：</p>
+<ul>
+<li><p>p(用来预测下一个值的过去值)</p>
+</li>
+<li><p>q(用来预测未来值的过去预测误差)</p>
+</li>
+<li><p>d(差分的顺序)</p>
+</li>
+</ul>
+<p>ARIMA的参数优化需要大量时间。因此我们将使用自动 ARIMA，自动选择误差最小的(p,q,d)最佳组合。要了解更多关于自动ARIMA的工作原理，请参阅本文：</p>
+<ul>
+<li>利用自动ARIMA建立高性能时间序列模型</li>
+</ul>
+<h5 id="实现-3"><a href="#实现-3" class="headerlink" title="实现"></a>实现</h5><pre class="line-numbers language-python"><code class="language-python">
+<span class="token keyword">from</span> pyramid<span class="token punctuation">.</span>arima <span class="token keyword">import</span> auto_arima
+
+data <span class="token operator">=</span> df<span class="token punctuation">.</span>sort_index<span class="token punctuation">(</span>ascending<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
+
+train <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">987</span><span class="token punctuation">]</span>
+valid <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token number">987</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+
+training <span class="token operator">=</span> train<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span>
+validation <span class="token operator">=</span> valid<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span>
+
+model <span class="token operator">=</span> auto_arima<span class="token punctuation">(</span>training<span class="token punctuation">,</span> start_p<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> start_q<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span>max_p<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">,</span> max_q<span class="token operator">=</span><span class="token number">3</span><span class="token punctuation">,</span> m<span class="token operator">=</span><span class="token number">12</span><span class="token punctuation">,</span>start_P<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> seasonal<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span>d<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> D<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> trace<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span>error_action<span class="token operator">=</span><span class="token string">'ignore'</span><span class="token punctuation">,</span>suppress_warnings<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+model<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>training<span class="token punctuation">)</span>
+
+forecast <span class="token operator">=</span> model<span class="token punctuation">.</span>predict<span class="token punctuation">(</span>n_periods<span class="token operator">=</span><span class="token number">248</span><span class="token punctuation">)</span>
+forecast <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>forecast<span class="token punctuation">,</span>index <span class="token operator">=</span> valid<span class="token punctuation">.</span>index<span class="token punctuation">,</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'Prediction'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h5 id="结果-3"><a href="#结果-3" class="headerlink" title="结果"></a>结果</h5><pre class="line-numbers language-python"><code class="language-python">
+rms<span class="token operator">=</span>np<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span>np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>np<span class="token punctuation">.</span>power<span class="token punctuation">(</span><span class="token punctuation">(</span>np<span class="token punctuation">.</span>array<span class="token punctuation">(</span>valid<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">-</span>np<span class="token punctuation">.</span>array<span class="token punctuation">(</span>forecast<span class="token punctuation">[</span><span class="token string">'Prediction'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+rms
+<span class="token number">44.954584993246954</span>
+<span class="token comment" spellcheck="true">#plot</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>train<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>valid<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>forecast<span class="token punctuation">[</span><span class="token string">'Prediction'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="/2021/03/01/li-yong-shen-du-xue-xi-he-ji-qi-xue-xi-yu-ce-gu-piao-shi-chang/.png"></p>
+<h5 id="推论-3"><a href="#推论-3" class="headerlink" title="推论"></a>推论</h5><p>正如我们前面看到的，自动ARIMA模型使用过去的数据来理解时间序列中的模式。利用这些值，该模型捕捉到该系列中的增长趋势。虽然使用这种技术的预测比以前实现的机器学习模型的预测要好得多，但是这些预测仍然与实际值相距甚远。</p>
+<p>从图中可以明显看出，该模型在序列中捕捉到了一种趋势，但忽略了季节的影响。在下一节中，我们将使用一个同时考虑了序列的趋势和季节性的时间序列模型。该模型。</p>
+<h3 id="6、先知（Prophet）"><a href="#6、先知（Prophet）" class="headerlink" title="6、先知（Prophet）"></a>6、先知（Prophet）</h3><h5 id="简介-5"><a href="#简介-5" class="headerlink" title="简介"></a>简介</h5><p>有许多时间序列技术可以用在股票预测数据集上，但是大多数技术在拟合模型之前需要大量的数据预处理。Prophet（先知）由Facebook设计和开发，是一个时间序列预测库，不需要数据预处理，并且非常容易实现。先知的输入是一个带有两列的数据框:日期和目标(ds和y)。</p>
+<p>先知试图在过去的数据中捕捉季节性，并且在数据集很大的时候依然表现良好。这里有一篇有趣的文章，用一个简单和直观的方式解释了先知算法：</p>
+<ul>
+<li>使用Facebook的Prophet生成快速准确的时间序列预测</li>
+</ul>
+<h5 id="实现-4"><a href="#实现-4" class="headerlink" title="实现"></a>实现</h5><pre class="line-numbers language-python"><code class="language-python">
+<span class="token comment" spellcheck="true">#importing prophet</span>
+<span class="token keyword">from</span> fbprophet <span class="token keyword">import</span> Prophet
+
+<span class="token comment" spellcheck="true">#creating dataframe</span>
+new_data <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>index<span class="token operator">=</span>range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>len<span class="token punctuation">(</span>df<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">,</span> <span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>len<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    new_data<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+    new_data<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+
+new_data<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span> <span class="token operator">=</span> pd<span class="token punctuation">.</span>to_datetime<span class="token punctuation">(</span>new_data<span class="token punctuation">.</span>Date<span class="token punctuation">,</span>format<span class="token operator">=</span><span class="token string">'%Y-%m-%d'</span><span class="token punctuation">)</span>
+new_data<span class="token punctuation">.</span>index <span class="token operator">=</span> new_data<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">#preparing data</span>
+new_data<span class="token punctuation">.</span>rename<span class="token punctuation">(</span>columns<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">'Close'</span><span class="token punctuation">:</span> <span class="token string">'y'</span><span class="token punctuation">,</span> <span class="token string">'Date'</span><span class="token punctuation">:</span> <span class="token string">'ds'</span><span class="token punctuation">}</span><span class="token punctuation">,</span> inplace<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">#train and validation</span>
+train <span class="token operator">=</span> new_data<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">987</span><span class="token punctuation">]</span>
+valid <span class="token operator">=</span> new_data<span class="token punctuation">[</span><span class="token number">987</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">#fit the model</span>
+model <span class="token operator">=</span> Prophet<span class="token punctuation">(</span><span class="token punctuation">)</span>
+model<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>train<span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">#predictions</span>
+close_prices <span class="token operator">=</span> model<span class="token punctuation">.</span>make_future_dataframe<span class="token punctuation">(</span>periods<span class="token operator">=</span>len<span class="token punctuation">(</span>valid<span class="token punctuation">)</span><span class="token punctuation">)</span>
+forecast <span class="token operator">=</span> model<span class="token punctuation">.</span>predict<span class="token punctuation">(</span>close_prices<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h5 id="结果-4"><a href="#结果-4" class="headerlink" title="结果"></a>结果</h5><pre class="line-numbers language-python"><code class="language-python">
+<span class="token comment" spellcheck="true">#rmse</span>
+forecast_valid <span class="token operator">=</span> forecast<span class="token punctuation">[</span><span class="token string">'yhat'</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">987</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+rms<span class="token operator">=</span>np<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span>np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>np<span class="token punctuation">.</span>power<span class="token punctuation">(</span><span class="token punctuation">(</span>np<span class="token punctuation">.</span>array<span class="token punctuation">(</span>valid<span class="token punctuation">[</span><span class="token string">'y'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">-</span>np<span class="token punctuation">.</span>array<span class="token punctuation">(</span>forecast_valid<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+rms
+
+<span class="token number">57.494461930575149</span>
+
+
+<span class="token comment" spellcheck="true">#plot</span>
+valid<span class="token punctuation">[</span><span class="token string">'Predictions'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>
+valid<span class="token punctuation">[</span><span class="token string">'Predictions'</span><span class="token punctuation">]</span> <span class="token operator">=</span> forecast_valid<span class="token punctuation">.</span>values
+
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>train<span class="token punctuation">[</span><span class="token string">'y'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>valid<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'y'</span><span class="token punctuation">,</span> <span class="token string">'Predictions'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="/2021/03/01/li-yong-shen-du-xue-xi-he-ji-qi-xue-xi-yu-ce-gu-piao-shi-chang/12.png"></p>
+<h5 id="推论-4"><a href="#推论-4" class="headerlink" title="推论"></a>推论</h5><p>先知(像大多数时间序列预测技术一样)试图从过去的数据中捕捉趋势和季节性。该模型通常在时间序列数据集上表现良好，但在本例中没有达到预期效果。</p>
+<p>事实证明，股票价格没有特定的趋势或季节性。价格的涨跌很大程度上取决于目前市场上的情况。因此，像ARIMA、SARIMA和Prophet这样的预测技术并不能很好地解决这个特殊的问题。</p>
+<p>让我们继续尝试另一种高级技术——长短时记忆网络(LSTM)。</p>
+<h3 id="7、长短期记忆网络-LSTM"><a href="#7、长短期记忆网络-LSTM" class="headerlink" title="7、长短期记忆网络(LSTM)"></a>7、长短期记忆网络(LSTM)</h3><h5 id="简介-6"><a href="#简介-6" class="headerlink" title="简介"></a>简介</h5><p>LSTM 算法广泛应用于序列预测问题中，并被证明是一种非常有效的方法。它们之所表现如此出色，是因为LSTM能够存储重要的既往信息，并忽略不重要的信息。</p>
+<p>LSTM有三个门：</p>
+<ul>
+<li><p>输入门：输入门将信息添加到细胞状态</p>
+</li>
+<li><p>遗忘门：它移除模型不再需要的信息</p>
+</li>
+<li><p>输出门：LSTM的输出门选择作为输出的信息</p>
+</li>
+</ul>
+<p>要更详细地了解LSTM及其体系结构，可以阅读下面的文章：</p>
+<ul>
+<li>长短期记忆网络简介</li>
+</ul>
+<p>现在，让我们将LSTM实现为一个黑盒，并检查它在特定数据上的性能。</p>
+<h5 id="实现-5"><a href="#实现-5" class="headerlink" title="实现"></a>实现</h5><pre class="line-numbers language-python"><code class="language-python">
+<span class="token comment" spellcheck="true">#importing required libraries</span>
+<span class="token keyword">from</span> sklearn<span class="token punctuation">.</span>preprocessing <span class="token keyword">import</span> MinMaxScaler
+<span class="token keyword">from</span> keras<span class="token punctuation">.</span>models <span class="token keyword">import</span> Sequential
+<span class="token keyword">from</span> keras<span class="token punctuation">.</span>layers <span class="token keyword">import</span> Dense<span class="token punctuation">,</span> Dropout<span class="token punctuation">,</span> LSTM
+
+<span class="token comment" spellcheck="true">#creating dataframe</span>
+data <span class="token operator">=</span> df<span class="token punctuation">.</span>sort_index<span class="token punctuation">(</span>ascending<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
+new_data <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>index<span class="token operator">=</span>range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>len<span class="token punctuation">(</span>df<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">,</span> <span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span>len<span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    new_data<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'Date'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+    new_data<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">#setting index</span>
+new_data<span class="token punctuation">.</span>index <span class="token operator">=</span> new_data<span class="token punctuation">.</span>Date
+new_data<span class="token punctuation">.</span>drop<span class="token punctuation">(</span><span class="token string">'Date'</span><span class="token punctuation">,</span> axis<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> inplace<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">#creating train and test sets</span>
+dataset <span class="token operator">=</span> new_data<span class="token punctuation">.</span>values
+
+train <span class="token operator">=</span> dataset<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">:</span><span class="token number">987</span><span class="token punctuation">,</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+valid <span class="token operator">=</span> dataset<span class="token punctuation">[</span><span class="token number">987</span><span class="token punctuation">:</span><span class="token punctuation">,</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+
+<span class="token comment" spellcheck="true">#converting dataset into x_train and y_train</span>
+scaler <span class="token operator">=</span> MinMaxScaler<span class="token punctuation">(</span>feature_range<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+scaled_data <span class="token operator">=</span> scaler<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>dataset<span class="token punctuation">)</span>
+
+x_train<span class="token punctuation">,</span> y_train <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">60</span><span class="token punctuation">,</span>len<span class="token punctuation">(</span>train<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    x_train<span class="token punctuation">.</span>append<span class="token punctuation">(</span>scaled_data<span class="token punctuation">[</span>i<span class="token number">-60</span><span class="token punctuation">:</span>i<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    y_train<span class="token punctuation">.</span>append<span class="token punctuation">(</span>scaled_data<span class="token punctuation">[</span>i<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+x_train<span class="token punctuation">,</span> y_train <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span>x_train<span class="token punctuation">)</span><span class="token punctuation">,</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span>y_train<span class="token punctuation">)</span>
+
+x_train <span class="token operator">=</span> np<span class="token punctuation">.</span>reshape<span class="token punctuation">(</span>x_train<span class="token punctuation">,</span> <span class="token punctuation">(</span>x_train<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>x_train<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true"># create and fit the LSTM network</span>
+model <span class="token operator">=</span> Sequential<span class="token punctuation">(</span><span class="token punctuation">)</span>
+model<span class="token punctuation">.</span>add<span class="token punctuation">(</span>LSTM<span class="token punctuation">(</span>units<span class="token operator">=</span><span class="token number">50</span><span class="token punctuation">,</span> return_sequences<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> input_shape<span class="token operator">=</span><span class="token punctuation">(</span>x_train<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+model<span class="token punctuation">.</span>add<span class="token punctuation">(</span>LSTM<span class="token punctuation">(</span>units<span class="token operator">=</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+model<span class="token punctuation">.</span>add<span class="token punctuation">(</span>Dense<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+model<span class="token punctuation">.</span>compile<span class="token punctuation">(</span>loss<span class="token operator">=</span><span class="token string">'mean_squared_error'</span><span class="token punctuation">,</span> optimizer<span class="token operator">=</span><span class="token string">'adam'</span><span class="token punctuation">)</span>
+model<span class="token punctuation">.</span>fit<span class="token punctuation">(</span>x_train<span class="token punctuation">,</span> y_train<span class="token punctuation">,</span> epochs<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> batch_size<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span> verbose<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span>
+
+<span class="token comment" spellcheck="true">#predicting 246 values, using past 60 from the train data</span>
+inputs <span class="token operator">=</span> new_data<span class="token punctuation">[</span>len<span class="token punctuation">(</span>new_data<span class="token punctuation">)</span> <span class="token operator">-</span> len<span class="token punctuation">(</span>valid<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">60</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">.</span>values
+inputs <span class="token operator">=</span> inputs<span class="token punctuation">.</span>reshape<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>
+inputs  <span class="token operator">=</span> scaler<span class="token punctuation">.</span>transform<span class="token punctuation">(</span>inputs<span class="token punctuation">)</span>
+
+X_test <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">for</span> i <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">60</span><span class="token punctuation">,</span>inputs<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    X_test<span class="token punctuation">.</span>append<span class="token punctuation">(</span>inputs<span class="token punctuation">[</span>i<span class="token number">-60</span><span class="token punctuation">:</span>i<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+X_test <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span>X_test<span class="token punctuation">)</span>
+
+X_test <span class="token operator">=</span> np<span class="token punctuation">.</span>reshape<span class="token punctuation">(</span>X_test<span class="token punctuation">,</span> <span class="token punctuation">(</span>X_test<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>X_test<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+closing_price <span class="token operator">=</span> model<span class="token punctuation">.</span>predict<span class="token punctuation">(</span>X_test<span class="token punctuation">)</span>
+closing_price <span class="token operator">=</span> scaler<span class="token punctuation">.</span>inverse_transform<span class="token punctuation">(</span>closing_price<span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h5 id="结果-5"><a href="#结果-5" class="headerlink" title="结果"></a>结果</h5><pre class="line-numbers language-python"><code class="language-python">
+rms<span class="token operator">=</span>np<span class="token punctuation">.</span>sqrt<span class="token punctuation">(</span>np<span class="token punctuation">.</span>mean<span class="token punctuation">(</span>np<span class="token punctuation">.</span>power<span class="token punctuation">(</span><span class="token punctuation">(</span>valid<span class="token operator">-</span>closing_price<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+rms
+
+<span class="token number">11.772259608962642</span>
+<span class="token comment" spellcheck="true">#for plotting</span>
+train <span class="token operator">=</span> new_data<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">987</span><span class="token punctuation">]</span>
+valid <span class="token operator">=</span> new_data<span class="token punctuation">[</span><span class="token number">987</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+valid<span class="token punctuation">[</span><span class="token string">'Predictions'</span><span class="token punctuation">]</span> <span class="token operator">=</span> closing_price
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>train<span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>valid<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'Close'</span><span class="token punctuation">,</span><span class="token string">'Predictions'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><img src="/2021/03/01/li-yong-shen-du-xue-xi-he-ji-qi-xue-xi-yu-ce-gu-piao-shi-chang/13.png"></p>
+<h5 id="推论-5"><a href="#推论-5" class="headerlink" title="推论"></a>推论</h5><p>哇！LSTM轻松地超越了我们目前看到的任何算法。LSTM模型可以对各种参数进行调优，如改变LSTM层数、增加dropout值或增加训练迭代轮数（epoch）数。但LSTM的预测是否足以确定股票价格将上涨还是下跌?当然不行！</p>
+<p>正如我在文章开头提到的，股价受到公司新闻和其他因素的影响，如公司的非货币化或合并/分拆。还有一些无形的因素往往是无法事先预测的。</p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>我在写这些文章时意识到时间序列预测是一个非常有趣的领域。在社区中有观点认为这是一个复杂的领域，虽然有一定道理，我还是想说一旦你掌握了基本的技巧，就不难理解它了。</p>
+<p>我对LSTM如何处理其他时间序列的问题很感兴趣，并鼓励您自己也尝试一下。如果你有任何问题，请在下面的留言部分与我联系。</p>
+<h3 id="相关技术名词解释"><a href="#相关技术名词解释" class="headerlink" title="相关技术名词解释"></a>相关技术名词解释</h3><blockquote>
+<p>权重</p>
+<blockquote>
+<p>线性模型中特征的系数，或深度网络中的边。训练线性模型的目标是确定每个特征的理想权重。如果权重为 0，则相应的特征对模型来说没有任何贡献。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>机器学习</p>
+<blockquote>
+<p>机器学习是人工智能的一个分支，是一门多领域交叉学科，涉及概率论、统计学、逼近论、凸分析、计算复杂性理论等多门学科。机器学习理论主要是设计和分析一些让计算机可以自动“学习”的算法。因为学习算法中涉及了大量的统计学理论，机器学习与推断统计学联系尤为密切，也被称为统计学习理论。算法设计方面，机器学习理论关注可以实现的，行之有效的学习算法。<br>Dropout<br>神经网络训练中防止过拟合的一种技术</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>参数</p>
+<blockquote>
+<p>在数学和统计学裡，参数（英语：parameter）是使用通用变量来建立函数和变量之间关系（当这种关系很难用方程来阐述时）的一个数量。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>验证集</p>
+<blockquote>
+<p>验证数据集是用于调整分类器超参数（即模型结构）的一组数据集，它有时也被称为开发集(dev set)。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>线性回归</p>
+<blockquote>
+<p>在现实世界中，存在着大量这样的情况：两个变量例如X和Y有一些依赖关系。由X可以部分地决定Y的值，但这种决定往往不很确切。常常用来说明这种依赖关系的最简单、直观的例子是体重与身高，用Y表示他的体重。众所周知，一般说来，当X大时，Y也倾向于大，但由X不能严格地决定Y。又如，城市生活用电量Y与气温X有很大的关系。在夏天气温很高或冬天气温很低时，由于室内空调、冰箱等家用电器的使用，可能用电就高，相反，在春秋季节气温不高也不低，用电量就可能少。但我们不能由气温X准确地决定用电量Y。类似的例子还很多，变量之间的这种关系称为“相关关系”，回归模型就是研究相关关系的一个有力工具。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>长短期记忆网络</p>
+<blockquote>
+<p>长短期记忆(Long Short-Term Memory) 是具有长期记忆能力的一种时间递归神经网络(Recurrent Neural Network)。 其网络结构含有一个或多个具有可遗忘和记忆功能的单元组成。它在1997年被提出用于解决传统RNN(Recurrent Neural Network) 的随时间反向传播中权重消失的问题（vanishing gradient problem over backpropagation-through-time)，重要组成部分包括Forget Gate, Input Gate, 和 Output Gate, 分别负责决定当前输入是否被采纳，是否被长期记忆以及决定在记忆中的输入是否在当前被输出。Gated Recurrent Unit 是 LSTM 众多版本中典型的一个。因为它具有记忆性的功能，LSTM经常被用在具有时间序列特性的数据和场景中。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>遗忘门</p>
+<blockquote>
+<p>LSTM或GRU中特有的机制</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>时间序列预测</p>
+<blockquote>
+<p>时间序列预测法其实是一种回归预测方法，属于定量预测，其基本原理是;一方面承认事物发展的延续性，运用过去时间序列的数据进行统计分析，推测出事物的发展趋势；另一方面充分考虑到偶然因素影响而产生的随机性，为了消除随机波动的影响，利用历史数据进行统计分析，并对数据进行适当处理，进行趋势预测。</p>
+</blockquote>
+</blockquote>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Roony Luo</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://www.angryprogrammer.tk/2021/03/01/li-yong-shen-du-xue-xi-he-ji-qi-xue-xi-yu-ce-gu-piao-shi-chang/">https://www.angryprogrammer.tk/2021/03/01/li-yong-shen-du-xue-xi-he-ji-qi-xue-xi-yu-ce-gu-piao-shi-chang/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Roony Luo</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2021/03/01/navicat15-zhu-ce-ji-huo-jiao-cheng/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Navicat15注册激活教程">
+                        
+                        <span class="card-title">Navicat15注册激活教程</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-01
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="post-category">
+                                    数据库
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/02/28/ke-xue-shang-wang-zhi-tenon/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="免费科学上网之Tenon">
+                        
+                        <span class="card-title">免费科学上网之Tenon</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-28
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" class="post-category">
+                                    科学上网
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Tenon/">
+                        <span class="chip bg-color">Tenon</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%85%8D%E8%B4%B9/">
+                        <span class="chip bg-color">免费</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="503838841"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            版权&nbsp;&copy;
+            
+                <span id="year">2019-2021</span>
+            
+            <span id="year">2019</span>
+            <a href="/about" target="_blank">Roony Luo</a>
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/luohongjun2017/" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:tliu904@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+    <a href="https://twitter.com/HONGJUN64911118" class="tooltipped" target="_blank" data-tooltip="关注我的Twitter: https://twitter.com/HONGJUN64911118" data-position="top" data-delay="50">
+        <i class="fab fa-twitter"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1181062873" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1181062873" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
