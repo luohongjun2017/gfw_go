@@ -207,35 +207,7 @@
   </url>
   
   <url>
-    <loc>https://www.angryprogrammer.tk/tags/google%E8%B4%A6%E5%8F%B7/</loc>
-    <lastmod>2021-03-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.angryprogrammer.tk/tags/%E6%B3%A8%E5%86%8C%E5%9B%BD%E5%A4%96%E8%B4%A6%E5%8F%B7/</loc>
-    <lastmod>2021-03-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.angryprogrammer.tk/tags/%E5%85%8D%E8%B4%B9%E8%8E%B7%E5%8F%96%E6%AF%94%E7%89%B9%E5%B8%81/</loc>
-    <lastmod>2021-03-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.angryprogrammer.tk/tags/Tenon/</loc>
-    <lastmod>2021-03-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.angryprogrammer.tk/tags/%E5%85%8D%E8%B4%B9/</loc>
     <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -250,6 +222,34 @@
   
   <url>
     <loc>https://www.angryprogrammer.tk/tags/SpringBoot/</loc>
+    <lastmod>2021-03-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.angryprogrammer.tk/tags/google%E8%B4%A6%E5%8F%B7/</loc>
+    <lastmod>2021-03-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.angryprogrammer.tk/tags/%E6%B3%A8%E5%86%8C%E5%9B%BD%E5%A4%96%E8%B4%A6%E5%8F%B7/</loc>
+    <lastmod>2021-03-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.angryprogrammer.tk/tags/Tenon/</loc>
+    <lastmod>2021-03-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.angryprogrammer.tk/tags/%E5%85%8D%E8%B4%B9/</loc>
     <lastmod>2021-03-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
