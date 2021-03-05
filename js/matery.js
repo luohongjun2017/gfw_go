@@ -169,4 +169,8 @@ $(function () {
 
     // 初始化加载 tooltipped.
     $('.tooltipped').tooltip();
+	
+	var script=$('<script type="text/javascript" src="//js.users.51.la/21074075.js"></script>');
+
+$('body').append(script);
 });
